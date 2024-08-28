@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
+
+.input {
+    @apply w-80 h-12 bg-inherit border-solid border-2 border-white rounded-2xl
+}
+
 @tailwind utilities;

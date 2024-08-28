@@ -5,4 +5,14 @@
     @apply w-80 h-12 bg-inherit border-solid border-2 border-white rounded-2xl
 }
 
+
+.heading {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
 @tailwind utilities;

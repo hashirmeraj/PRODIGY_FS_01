@@ -14,7 +14,7 @@
 
 <body class="body text">
     <div class="container h-screen flex items-center justify-center ">
-        <form action="#" method="post">
+        <form action="./particles/handleLogin.php" method="post">
             <div class="login flex flex-col items-center  w-96 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl">
                 <h1 class=" mt-12 mb-5 heading text-4xl font-semibold">Login</h1>
                 <div class=" flex">

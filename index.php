@@ -25,7 +25,7 @@
                 </div>
                 <div class=" flex">
                     <input class="input mb-4 p-3 placeholder:text-white" type="password" placeholder="Enter Your Password" name="loginPassword" required>
-                    <span class="material-symbols-outlined absolute mt-3 ml-72">
+                    <span class="material-symbols-outlined absolute mt-3 ">
                         lock
                     </span>
                 </div>

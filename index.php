@@ -30,7 +30,7 @@ $username = $_SESSION['userName'];
     <!-- Include Google Fonts and Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./src/styles.css"> <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="./src/style.css"> <!-- Link to custom CSS -->
     <title>Home</title> <!-- Page title -->
 </head>
 

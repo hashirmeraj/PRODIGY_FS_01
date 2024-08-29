@@ -1,11 +1,16 @@
 <?php
 $regTrue = false;
+$emailError = false;
+$passError = false;
+
 if (isset($_GET['create']) && $_GET['create'] == 'true') {
     $regTrue = true;
 } elseif (isset($_GET['create']) && $_GET['create'] == 'false') {
     $errorMessage = urldecode($_GET['error']);
-    if ($errorMessage) {
-        # code...
+    if ($errorMessage = 'Email already exist') {
+        $emailError = true;
+    } elseif ($errorMessage = 'password does not match') {
+        $passError = true;
     }
 }
 ?>
@@ -43,10 +48,9 @@ if (isset($_GET['create']) && $_GET['create'] == 'true') {
         </button>
     </div>
         ';
-    }
-    ?>
-
-    <!-- Alert Container -->
+    } elseif ($emailError) {
+        echo '
+            <!-- Alert Container -->
     <div
         class="alert fixed top-4 right-4 bg-red-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
 
@@ -60,6 +64,28 @@ if (isset($_GET['create']) && $_GET['create'] == 'true') {
             </svg>
         </button>
     </div>
+        ';
+    } elseif ($passError) {
+        echo '
+            <!-- Alert Container -->
+    <div
+        class="alert fixed top-4 right-4 bg-red-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
+
+        <!-- Alert Message -->
+        <span class="flex-1 font-semibold text-lg">Registration Successful!</span>
+        <!-- Close Button -->
+        <button class="close-btn ml-4 text-white hover:text-gray-300 focus:outline-none">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+        ';
+    }
+    ?>
+
+
     <div class="container h-screen flex items-center justify-center ">
         <form action="./particles/handleRegister.php" method="post">
             <div class="login flex flex-col items-center  w-96  backdrop-blur-md border-solid border-2 border-white rounded-2xl">

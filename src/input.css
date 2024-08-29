@@ -8,7 +8,7 @@
 }
 
 .input {
-    @apply mb-4 pl-11 focus:border-[#9a17eb6c] focus:outline-none focus:ring-1 placeholder:text-white w-80 h-12 bg-inherit border-solid border-2 border-white rounded-2xl
+    @apply mb-4 pl-11 focus:border-[#9a17eb6c] focus:outline-none focus:ring-1 focus:text-white placeholder:text-white w-80 h-12 bg-inherit border-solid border-2 border-white rounded-2xl
 }
 
 .btn {

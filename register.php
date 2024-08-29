@@ -15,7 +15,7 @@
 <body class="body text">
     <div class="container h-screen flex items-center justify-center ">
         <form action="#" method="post">
-            <div class="login flex flex-col items-center  w-96 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl">
+            <div class="login flex flex-col items-center  w-96  backdrop-blur-md border-solid border-2 border-white rounded-2xl">
                 <h1 class=" mt-12 mb-5 heading text-4xl font-semibold">Register</h1>
                 <div class=" flex">
                     <input class=" input " type="text" placeholder="Enter Name" name="registerName" required>
@@ -41,13 +41,13 @@
                         lock
                     </span>
                 </div>
-                <div class=" flex">
-                    <input class="input " type="checkbox" required>
-                    <span>I accept all term & conditions</span>
+                <div class=" flex mr-16 mb-2">
+                    <input class="form-checkbox h-5 w-5 text-purple-600 " type="checkbox" required>
+                    <span class=" ml-4 text-white">I accept all term & conditions</span>
                 </div>
 
-                <button type="submit" class="input btn">Login</button>
-                <span class="text-white">Don't have account? <span class=" font-semibold"><a href="./register.php">Register</a></span></span>
+                <button type="submit" class="input btn">Register</button>
+                <span class="text-white mb-4">Already have an account? <span class=" font-semibold "><a href="./login.php">Login now</a></span></span>
             </div>
         </form>
     </div>

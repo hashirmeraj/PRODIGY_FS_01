@@ -10,7 +10,7 @@ if ($method == 'POST') {
     $emailExist = mysqli_num_rows($result);
 
     if ($emailExist == 1) {
-
+        $row = mysqli_fetch_assoc($result);
         $userName = $row['user_name'];
         $userPassword = $row['user_password'];
         //verify password
@@ -19,6 +19,12 @@ if ($method == 'POST') {
 
             $_SESSION['loggedin'] = true;
             $_SESSION['userName'] = $userName;
+            header("Location:../index.php?login=true");
+            exit();
         }
+    } else {
+        $error = 'Invalid credentials';
     }
 }
+header("Location:../login.php?login=false&&error=" . urlencode($error));
+exit();

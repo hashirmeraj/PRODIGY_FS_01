@@ -14,7 +14,7 @@ if ($method == 'POST') {
     $emailExist = mysqli_num_rows($result);
 
     if ($emailExist > 0) {
-        echo $error = 'Email already exist';
+        $error = 'Email already exist';
     } else {
         // matching passowrd 
         if ($registerPassword == $confirmPassword) {
@@ -23,8 +23,9 @@ if ($method == 'POST') {
             VALUES ( '$registerName', '$registerEmail', '$hashPassword' )";
             $result = mysqli_query($conn, $sql);
             header("Location:../register.php?create=true");
+            exit();
         } else {
-            echo $error = 'password does not match';
+            $error = 'password does not match';
         }
     }
 }

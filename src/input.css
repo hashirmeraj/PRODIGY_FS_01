@@ -12,7 +12,7 @@
 }
 
 .btn {
-    @apply font-medium text-[#9917eb] bg-white mb-2 pr-11 active:bg-[#570095]
+    @apply font-medium text-[#9917eb] bg-white mb-2 pr-11 active:bg-[#570095] hover:bg-slate-100
 }
 
 

@@ -27,7 +27,7 @@ $username = $_SESSION['userName'];
     <div class="container h-screen flex items-center justify-center ">
 
         <div class="login flex flex-col items-center justify-center w-2/5 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl text-white">
-            <div class="container w-56">
+            <div class="container w-96">
                 <span class=" mb-5 heading text-3xl ">Welcome
                     <span class=" text-purple-400 ">
                         <?php
@@ -36,7 +36,9 @@ $username = $_SESSION['userName'];
                     </span>
                     to our home page
                 </span>
+
             </div>
+            <a href="./particles/logout.php"><button type="submit" class="btn input  mt-5">Logout</button></a>
         </div>
 
     </div>

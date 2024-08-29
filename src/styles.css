@@ -637,6 +637,11 @@ video {
   color: rgb(153 23 235 / var(--tw-text-opacity));
 }
 
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
 .btn:active {
   --tw-bg-opacity: 1;
   background-color: rgb(87 0 149 / var(--tw-bg-opacity));
@@ -692,6 +697,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -706,10 +715,6 @@ video {
 
 .w-2\/5 {
   width: 40%;
-}
-
-.w-56 {
-  width: 14rem;
 }
 
 .w-96 {

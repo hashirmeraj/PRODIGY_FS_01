@@ -15,6 +15,7 @@
     @apply font-medium text-[#9917eb] bg-white mb-2 pr-11 active:bg-[#570095]
 }
 
+
 .text {
     @apply text-[#9917eb]
 }

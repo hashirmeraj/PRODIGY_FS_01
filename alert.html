@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Register Success Alert</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+
+<body class="p-6">
+    <!-- Alert Container -->
+    <div
+        class="alert fixed top-4 right-4 bg-green-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
+
+        <!-- Alert Message -->
+        <span class="flex-1 font-semibold text-lg">Registration Successful!</span>
+        <!-- Close Button -->
+        <button class="close-btn ml-4 text-white hover:text-gray-300 focus:outline-none">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.close-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                this.closest('.alert').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>

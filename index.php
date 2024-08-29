@@ -29,7 +29,7 @@ $username = $_SESSION['userName'];
         <div class="login flex flex-col items-center justify-center w-2/5 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl text-white">
             <div class="container w-96">
                 <span class=" mb-5 heading text-3xl ">Welcome
-                    <span class=" text-purple-400 ">
+                    <span class=" text-purple-400 capitalize ">
                         <?php
                         echo $username;
                         ?>

@@ -18,17 +18,34 @@
             <div class="login flex flex-col items-center  w-96 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl">
                 <h1 class=" mt-12 mb-5 heading text-4xl font-semibold">Register</h1>
                 <div class=" flex">
+                    <input class=" input " type="text" placeholder="Enter Name" name="registerName" required>
+                    <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
+                        mail
+                    </span>
+                </div>
+                <div class=" flex">
                     <input class=" input " type="email" placeholder="Enter Your Email ID" name="loginEmail" required>
                     <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
                         mail
                     </span>
                 </div>
                 <div class=" flex">
-                    <input class="input " type="password" placeholder="Enter Your Password" name="loginPassword" required>
+                    <input class="input " type="password" placeholder="Create Password" name="registerPassword" required>
                     <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
                         lock
                     </span>
                 </div>
+                <div class=" flex">
+                    <input class="input " type="password" placeholder="Confirm Password" name="confirmPassword" required>
+                    <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
+                        lock
+                    </span>
+                </div>
+                <div class=" flex">
+                    <input class="input " type="checkbox" required>
+                    <span>I accept all term & conditions</span>
+                </div>
+
                 <button type="submit" class="input btn">Login</button>
                 <span class="text-white">Don't have account? <span class=" font-semibold"><a href="./register.php">Register</a></span></span>
             </div>

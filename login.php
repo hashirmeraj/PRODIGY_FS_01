@@ -12,25 +12,25 @@
     <title>Login</title>
 </head>
 
-<body style="  background-image: url(./src/images/login-bg.png); background-size:cover;">
-    <div class="container h-screen flex items-center justify-center text-white">
+<body class="body text">
+    <div class="container h-screen flex items-center justify-center ">
         <form action="#" method="post">
             <div class="login flex flex-col items-center  w-96 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl">
                 <h1 class=" mt-12 mb-5 heading text-4xl font-semibold">Login</h1>
                 <div class=" flex">
-                    <input class=" input mb-4 p-3 placeholder:text-white" type="email" placeholder="Enter Your Email ID" name="loginEmail" required>
-                    <span class="material-symbols-outlined absolute mt-3 ml-72 ">
+                    <input class=" input " type="email" placeholder="Enter Your Email ID" name="loginEmail" required>
+                    <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
                         mail
                     </span>
                 </div>
                 <div class=" flex">
-                    <input class="input mb-4 p-3 placeholder:text-white" type="password" placeholder="Enter Your Password" name="loginPassword" required>
-                    <span class="material-symbols-outlined absolute mt-3 ">
+                    <input class="input " type="password" placeholder="Enter Your Password" name="loginPassword" required>
+                    <span class="material-symbols-outlined absolute mt-3 ml-[0.6rem] text-white">
                         lock
                     </span>
                 </div>
-                <button type="submit" class="input font-medium text-black bg-white mb-2">Login</button>
-                <span>Don't have account? <span class=" font-semibold"><a href="./register.php">Register</a></span></span>
+                <button type="submit" class="input btn">Login</button>
+                <span class="text-white">Don't have account? <span class=" font-semibold"><a href="./register.php">Register</a></span></span>
             </div>
         </form>
     </div>

@@ -7,9 +7,9 @@ if (isset($_GET['create']) && $_GET['create'] == 'true') {
     $regTrue = true;
 } elseif (isset($_GET['create']) && $_GET['create'] == 'false') {
     $errorMessage = urldecode($_GET['error']);
-    if ($errorMessage = 'Email already exist') {
+    if ($errorMessage == 'Email already exist') {
         $emailError = true;
-    } elseif ($errorMessage = 'password does not match') {
+    } elseif ($errorMessage == 'password does not match') {
         $passError = true;
     }
 }
@@ -55,7 +55,7 @@ if (isset($_GET['create']) && $_GET['create'] == 'true') {
         class="alert fixed top-4 right-4 bg-red-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
 
         <!-- Alert Message -->
-        <span class="flex-1 font-semibold text-lg">Registration Successful!</span>
+        <span class="flex-1 font-semibold text-lg">This email address is already registered.</span>
         <!-- Close Button -->
         <button class="close-btn ml-4 text-white hover:text-gray-300 focus:outline-none">
             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ if (isset($_GET['create']) && $_GET['create'] == 'true') {
         class="alert fixed top-4 right-4 bg-red-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
 
         <!-- Alert Message -->
-        <span class="flex-1 font-semibold text-lg">Registration Successful!</span>
+        <span class="flex-1 font-semibold text-lg">The passwords do not match. Please try again.</span>
         <!-- Close Button -->
         <button class="close-btn ml-4 text-white hover:text-gray-300 focus:outline-none">
             <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

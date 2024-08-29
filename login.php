@@ -1,3 +1,9 @@
+<?php
+$loginFail = false;
+if (isset($_GET['login']) && $_GET['login'] == 'false') {
+    $loginFail = true;
+}
+?>
 <!doctype html>
 <html>
 
@@ -13,6 +19,27 @@
 </head>
 
 <body class="body text">
+    <?php
+    if ($regTrue) {
+        echo '
+        
+    <!-- Alert Container -->
+    <div
+        class="alert fixed top-4 right-4 bg-red-600 text-white p-6 rounded-lg shadow-lg flex items-center space-x-4 max-w-xs mx-auto">
+
+        <!-- Alert Message -->
+        <span class="flex-1 font-semibold text-lg">Invalid credentials. Please check your username and password.</span>
+        <!-- Close Button -->
+        <button class="close-btn ml-4 text-white hover:text-gray-300 focus:outline-none">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+        ';
+    }
+    ?>
     <div class="container h-screen flex items-center justify-center ">
         <form action="./particles/handleLogin.php" method="post">
             <div class="login flex flex-col items-center  w-96 h-96 backdrop-blur-md border-solid border-2 border-white rounded-2xl">

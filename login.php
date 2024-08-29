@@ -20,7 +20,7 @@ if (isset($_GET['login']) && $_GET['login'] == 'false') {
 
 <body class="body text">
     <?php
-    if ($regTrue) {
+    if ($loginFail) {
         echo '
         
     <!-- Alert Container -->

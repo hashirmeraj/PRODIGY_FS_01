@@ -18,7 +18,8 @@ if ($method == 'POST') {
     } else {
         // matching passowrd 
         if ($registerPassword == $confirmPassword) {
-            
+            $hashPassword = password_hash($registerPassword, PASSWORD_DEFAULT);
+            $sql = "";
         } else {
             echo $error = 'password does not match';
         }

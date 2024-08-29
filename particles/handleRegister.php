@@ -19,7 +19,10 @@ if ($method == 'POST') {
         // matching passowrd 
         if ($registerPassword == $confirmPassword) {
             $hashPassword = password_hash($registerPassword, PASSWORD_DEFAULT);
-            $sql = "";
+            $sql = "INSERT INTO `register` (`user_name`, `user_email`, `user_password`) 
+            VALUES ( '$registerName', '$registerEmail', '$hashPassword' )";
+            $result = mysqli_query($conn, $sql);
+            header("Location:../register.php?create=true");
         } else {
             echo $error = 'password does not match';
         }
